@@ -1,5 +1,6 @@
 from selenium import webdriver
-import time
+
+
 from selenium.webdriver.support.select import Select
 
 if __name__ == '__main__':
@@ -7,36 +8,36 @@ if __name__ == '__main__':
     # driver.get 打开一个指定网页
     driver.get("http://192.168.60.146:8080/demo1.html")
     # # 等待几秒
-    # time.sleep(5)
-    # input_el=driver.find_element_by_xpath("/html/body/table/tbody/tr[2]/td[2]/input")
-    # input_el.send_keys("只要你很俩家坡")
-    # time.sleep(5)
+    time.sleep(5)
+    input_el=driver.find_element_by_xpath("/html/body/table/tbody/tr[2]/td[2]/input")
+    input_el.send_keys("只要你很俩家坡")
+    time.sleep(5)
     # # # clear 清除
-    # input_el.clear()
+    input_el.clear()
     #
     #
-    # time.sleep(5)
-    # file_el=driver.find_element_by_id('file1')
-    # file_el.send_keys('C:/Users/Administrator/Pictures/DAY1.png')
+    time.sleep(5)
+    file_el=driver.find_element_by_id('file1')
+    file_el.send_keys('C:/Users/Administrator/Pictures/DAY1.png')
     #
     #
     #
-    # radio_els=driver.find_elements_by_name('radio')
-    # print(type(radio_els))
-    # radio_els[0].click()
-    # time.sleep(1)
-    # radio_els[1].click()
-    # time.sleep(2)
+    radio_els=driver.find_elements_by_name('radio')
+    print(type(radio_els))
+    radio_els[0].click()
+    time.sleep(1)
+    radio_els[1].click()
+    time.sleep(2)
     #
     #
-    # checkbox_els=driver.find_elements_by_class_name('checkbox')
-    # print(checkbox_els)
-    # checkbox_els[0].click()
-    # time.sleep(1)
-    # checkbox_els[1].click()
-    # time.sleep(1)
-    # checkbox_els[2].click()
-    # time.sleep(1)
+    checkbox_els=driver.find_elements_by_class_name('checkbox')
+    print(checkbox_els)
+    checkbox_els[0].click()
+    time.sleep(1)
+    checkbox_els[1].click()
+    time.sleep(1)
+    checkbox_els[2].click()
+    time.sleep(1)
 
     button_els=driver.find_element_by_xpath('//input[@value="普通按钮"]')
     button_els.click()
